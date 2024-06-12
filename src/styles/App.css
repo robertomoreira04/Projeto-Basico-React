@@ -13,6 +13,20 @@ a {
     text-decoration: none;
 }
 
+.imagens {
+    width: 300px;
+    height: 300px;
+}
+
+section#articles {
+    margin: 4rem auto;
+    max-width: 1240px;
+    padding: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
 
 
 
