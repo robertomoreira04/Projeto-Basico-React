@@ -2,26 +2,27 @@ import React from "react";
 import "./styles.css"
 
 
-export class Article extends React.Component {
-    render() {
+export function Article ({image, title, from, text}) {
+
+
         return (
             <article id="article">
 
-                <img className="imagens" src={this.props.imagem} alt={this.props.title} />
+                <img className="imagens" src={image} alt={title} />
 
                 <div className="article-infos">
 
-                    <h2>{this.props.title}</h2>
+                    <h2>{title}</h2>
 
-                    <h3>{this.props.from}</h3>
+                    <h3>{from}</h3>
 
-                    <p>{this.props.texto}</p>
+                    <p>{text}</p>
 
                 </div>
             </article>
         )
     }
-}
+
 
 
 
